@@ -1,0 +1,143 @@
+@import url(style.css);
+
+/*** ADD BOOK SECTION ***/
+
+.add-book-section {
+    display: flex;
+    margin-top: 100px;
+}
+
+.add-book-pict {
+    display: flex;
+}
+
+.add-book-picture{
+    margin: auto;
+    text-align: center;
+}
+
+.add-book-picture img{
+    width: 70%;
+}
+
+.add-book-pict-quote{
+    margin: auto;
+}
+
+.add-book-pict-quote h4{
+    font-weight: 400;
+    margin-right: 30px;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.add-book-pict-quote h5{
+    margin-top: 17px;
+    font-size: 17px;
+}
+
+.card{
+    padding: 20px;
+    background: #F8FAFD;
+    border-radius: 6px;
+    border: white;
+    overflow: hidden;
+}
+
+.card-body h5{
+    padding-bottom: 20px;
+}
+
+.add{
+    padding: 10px 0px;
+   
+}
+
+.form-control{
+    border-color: #91A8FC;
+    border-radius: 6px;
+}
+
+.card-body .form-2{
+    padding: 10px 10px 0 10px;
+}
+
+.card-body .btn{
+    text-align: center;
+    padding: auto;
+    width: 100px;
+    background-color: #91A8FC;
+}
+
+@media screen and (max-width: 750px){
+
+    .add-book-section {
+        display: block;
+        margin-top: 100px;
+    }
+
+    .add-book-pict {
+        display: block;
+        margin: auto;
+    }
+
+    .add-book-picture{
+        text-align: center;
+    }
+
+    .add-book-picture img{
+        width: 40%;
+    }
+
+    .add-book-pict-quote{
+        margin: 30px;
+    }
+    
+    .add-book-pict-quote h4{
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 27px;
+    }
+    
+    .add-book-pict-quote h5{
+        font-size: 14px;
+        margin-top: 17px;
+    }
+}
+
+@media screen and (min-width: 751px) and (max-width: 1000px){
+
+    .add-book-section {
+        display: flex;
+        margin-top: 100px;
+    }
+
+    .add-book-pict {
+        display: block;
+        margin: auto;
+    }
+
+    .add-book-picture{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .add-book-picture img{
+        width: 40%;
+    }
+
+    .add-book-pict-quote{
+        width: 100%;
+    }
+    
+    .add-book-pict-quote h4{
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 27px;
+    }
+    
+    .add-book-pict-quote h5{
+        font-size: 14px;
+        margin-top: 17px;
+    }
+}

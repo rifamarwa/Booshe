@@ -1,0 +1,97 @@
+@import url(style.css);
+
+/*** LIST BOOKS SECTION ***/
+
+.list-books-section{
+    margin-top: 100px;
+}
+
+.search-form{
+    width: 400px;
+}
+
+.search-book-container{
+    display: flex;
+    width: 100%;
+}
+
+.list-books-container{
+    margin-top: 50px;
+}
+
+.card{
+    padding: 20px;
+    border-radius: 6px;
+    border: white;
+    overflow: hidden;
+}
+
+.item-card{
+    width: 120px;
+    margin: 20px 20px;
+}
+
+.text-container{
+    display:grid;
+    width: 100%;
+}
+
+.cover-container{
+    width: 50%;
+    position: relative;
+}
+
+.book-cover{
+    opacity: 1;
+    display: block;
+    width: 140px;
+    height: 200px;
+    object-fit: cover;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.cover-container:hover img{
+    opacity: 0.3;
+}
+
+
+.cover-container .button-overlay{
+    transition: .5s ease;
+    opacity: 0;
+    position:absolute;
+    top: 100px;
+    left: 70px;
+    display: grid;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.button-overlay button{
+    margin-top: 10px;
+}
+
+.cover-container:hover .button-overlay{
+    opacity: 1;
+}
+
+.text-container h6{
+    width: 140px;
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.text-container h7, h8{
+    width: 100%;
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 750px){
+    .search-form{
+        width: 230px;
+    }
+
+    
+}

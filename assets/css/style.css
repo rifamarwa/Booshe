@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+/********* NAVIGATION *********/
+
+header{
+    background: linear-gradient(9.67deg, #00029D 7.32%, #00029D 38.73%, rgba(0, 2, 157, 0.176001) 125.57%, rgba(0, 2, 157, 0) 125.58%, rgba(0, 2, 157, 0) 125.6%);
+    background-blend-mode: darken;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1
+}
+
+nav{
+    padding: 20px;
+    display: flex;
+}
+
+.logo img{
+    width: 40%;
+}
+
+ul{
+    display: flex;
+    justify-content:end;
+    width: 100%;
+}
+
+li{
+    list-style: none;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:active, a:hover{
+    background: linear-gradient(78.18deg, #A6B7FD 22.94%, #FFD3CE 125.55%, rgba(251, 184, 176, 0) 249.4%);
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.icon{
+    display: none;
+}
+
+
+/********* MAIN CONTENT *********/
+
+main {
+    padding: 40px;
+}
+
+@media screen and (max-width: 700px) {
+    ul li{
+        display: none;
+    }
+
+    .icon{
+        float: right;
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 700px){
+    nav.responsive {
+        position: relative;
+        display: block;
+    }
+
+    nav.responsive .logo img{
+        width: 18%;
+    }
+
+    nav.responsive ul{
+        display:block;
+    }
+
+    nav.responsive ul li{
+        display:block;
+        list-style: none;
+        text-align: center;
+    }
+
+    nav.responsive .icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+/********* FOOTER *********/
+
+footer {
+    background: linear-gradient(9.67deg, #00029D 7.32%, #00029D 38.73%, rgba(0, 2, 157, 0.176001) 125.57%, rgba(0, 2, 157, 0) 125.58%, rgba(0, 2, 157, 0) 125.6%);
+    background-blend-mode: darken;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    color: white;
+}
+
