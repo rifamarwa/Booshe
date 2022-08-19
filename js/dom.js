@@ -3,6 +3,17 @@ const RENDER_EVENT = 'render-book';
 const STORAGE_KEY = 'BOOKSHELF_APPS';
 
 document.addEventListener(RENDER_EVENT, function() {
+    const recentlyBookList = document.getElementById("recentBook");
+    recentlyBookList.innerHTML = '';
+
+    const recentBooks = books.sort((a,b) => b.id - a.id).filter((book, index) => index < 6 && book);
+
+    for (const bookItem of recentBooks){
+        const recentBookElement = makeRecentBooks(bookItem);
+        recentlyBookList.append(recentBookElement);
+    }
+    
+   
     const unfinishedBook = document.getElementById('unfinished-book');
     unfinishedBook.innerHTML = '';
 
@@ -199,4 +210,33 @@ function undoBookFromFinished(bookID){
     bookTarget.isCompleted = false;
     document.dispatchEvent(new Event(RENDER_EVENT));
     saveBookData();
+}
+
+
+function makeRecentBooks(bookObject){
+    const recentBookCover = document.createElement('img');
+    recentBookCover.classList.add('book-cover');
+    recentBookCover.srcset = bookObject.cover;
+
+    const recentBookTitle = document.createElement('h6');
+    recentBookTitle.setAttribute('id', 'bookTitle');
+    recentBookTitle.innerText = bookObject.title;
+
+    const recentBookAuthor = document.createElement('h7');
+    recentBookAuthor.innerText = bookObject.author;
+
+    const recentBookPublished = document.createElement('h8');
+    recentBookPublished.innerText = bookObject.year; 
+
+    const textContainer = document.createElement('div');
+    textContainer.classList.add('text-container');
+    textContainer.append(recentBookCover, recentBookTitle, recentBookAuthor, recentBookPublished); 
+
+    const container = document.createElement('div');
+    container.classList.add('item-card');
+    container.className += ' col';
+    container.append(textContainer);
+    container.setAttribute('id', `book-${bookObject.id}`);
+
+    return container;
 }

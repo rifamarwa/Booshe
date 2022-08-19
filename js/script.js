@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function(){
             }
     })
 
-
     const submitForm = document.getElementById('addBookForm');
     submitForm.addEventListener('submit', function(event){
         event.preventDefault();
