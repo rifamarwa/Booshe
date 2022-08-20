@@ -1,7 +1,7 @@
 # Booshe
 Booshe is a book data management web application using DOM and Web Storage JavaScript concepts. This application was made to fulfill submissions Dicoding: Learn to Create Front-End Web for Beginners.
 
-Booshee is an application where users can sort their reading history of books into unfinished or finished book categories. They can add their list of books and Booshe will use local web storage to save data. Moreover, they can see their recently added books in the Recently Added section and search books by title.
+Booshee is an application where users can sort their reading history into unfinished or finished book categories. They can add their list of books and Booshe will use local web storage to save data. Moreover, they can see their recently added books in the Recently Added section and search books by title.
 
 ## 📚 Table of Content
 * [Technologies](#technologies)
